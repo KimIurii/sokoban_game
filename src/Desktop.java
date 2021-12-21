@@ -1,9 +1,9 @@
 import java.io.Serializable;
 
-public class LevelModel implements Serializable {
+public class Desktop implements Serializable {
     private int[][] desktop;
 
-    public LevelModel(){
+    public Desktop(){
 
     }
 

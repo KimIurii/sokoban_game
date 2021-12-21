@@ -228,7 +228,7 @@ public class Level implements Serializable{
             ObjectInputStream in = new ObjectInputStream(socket.getInputStream());)
         {
             out.println(getLevel);
-            LevelModel serverLevel = (LevelModel)in.readObject();
+            Desktop serverLevel = (Desktop)in.readObject();
             int[][] desktopFromServer = serverLevel.getDesktop();
             return desktopFromServer;
         }catch (ClassNotFoundException cnfe){
